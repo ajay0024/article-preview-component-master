@@ -1,0 +1,153 @@
+:root {
+  --light-blue: hsl(210, 46%, 95%);
+  --light-grey-blue: hsl(210, 46%, 95%);
+  --des-blue: hsl(214, 17%, 51%);
+  --dark-grey-blue: hsl(217, 19%, 35%);
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Manrope', sans-serif;
+  font-size: 13px;
+  font-weight: 500;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  background-color: var(--light-grey-blue);
+  color: var(--des-blue);
+}
+
+.card {
+  width: 90vw;
+  max-width: 370px;
+  background-color: white;
+  border-radius: 0.5rem;
+}
+
+.card-image img {
+  border-radius: 0.5rem 0.5em 0 0;
+  width: 100%;
+}
+
+.bold {
+  font-weight: 700;
+  color: var(--dark-grey-blue);
+}
+
+img.round {
+  border-radius: 50%;
+}
+
+.lh {
+  line-height: 1.5rem;
+}
+
+.card-text {
+  margin: 3em 2.5em 1.5em 2.5em;
+}
+
+.card-footer {
+  position: relative;
+  /* margin-bottom: 2.5rem; */
+}
+
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  height: 3rem;
+  padding: 1.5rem 2.5rem 1.5em 2.5rem;
+}
+
+.desc {
+  flex-basis: 60%;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+}
+
+.share-icon {
+  align-self: center;
+}
+
+.share-icon img {
+  padding: 0.75em;
+  cursor: pointer;
+}
+
+
+.light-background{
+  background-color: var(--light-grey-blue);
+}
+.dark-background{
+  background-color: var(--des-blue);
+}
+
+#footer2>.share-icon {
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 35%;
+}
+
+#footer2 {
+  position: absolute;
+  background-color: var(--dark-grey-blue);
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  padding: 1.5rem 2.5rem 1.5rem 2.5rem;
+  border-radius: 0 0 0.5rem 0.5rem;
+  letter-spacing: 0.5em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+@media (min-width:720px) {
+  .card {
+    max-width: 700px;
+    display: flex;
+  }
+  .card-image img {
+    border-radius: 0.5rem 0.5em 0 0;
+    height: 100%;
+    object-fit: cover;
+  }
+  .share-icon{
+    position: relative;
+  }
+  #footer2 {
+    width: 200px;
+    position: absolute;
+    background-color: var(--dark-grey-blue);
+    bottom: 150%;
+    left:calc(-25% - 100px);
+    right: auto;
+    top: auto;
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.5rem;
+    letter-spacing: 0.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  #footer2::after {
+  content: " ";
+  position: absolute;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: var(--dark-grey-blue) transparent transparent transparent;
+}
+  #footer2>.share-icon{
+    display: none;
+  }
+}
