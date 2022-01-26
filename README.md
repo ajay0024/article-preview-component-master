@@ -26,14 +26,14 @@ Users should be able to:
 
 ### Screenshots
 
-![](./screenshots/s-desktop.jpg)
-![](./screenshots/s-mobile.jpg)
+![](./screenshots/s-desktop.png)
+![](./screenshots/s-mobile.png)
 
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/ajay0024/article-preview-component-master)
+- Live Site URL: [Add live site URL here](https://ajay0024.github.io/article-preview-component-master/)
 
 ## My process
 I build it keeping the workflow mobile-first. Flex was used to make general layout and make it responsive. Very simple JavaScript was used to trigger the sharing button.
